@@ -23,16 +23,17 @@ main{
         border-radius: 1.5625rem 1.5625rem 0 0;
     }
 
-    .summaryDescription, .summaryDetails, .summaryAction{
+    .summaryDescription, .summaryAction{
         background-color: $clr-white;
-        padding: 1.875rem;
+        
 
     }
 
     .summaryDescription{
         display: flex;
         flex-direction: column;
-        gap: 1.25rem;
+        gap: 15px;
+        padding: 20px 30px 0 30px;
 
         h1{
             color: $clr-neutral-3;
@@ -42,24 +43,82 @@ main{
 
         p{
             color: $clr-neutral-2;
-            font-weight: 700;
+            font-weight: 500;
+            padding: 0 20px;
+            font-size: 14px;
         }
 
     }
 
     .summaryDetails{
-        background-color: $clr-neutral-3;
+        background-color: $clr-white;
+        padding: 1.25rem;
         
         
         &__wrap{
-            margin: 20px;
-            background-color: #fff;
+            font-weight: normal;
+            background-color: $clr-neutral-1;
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            justify-items: flex-start;
+            align-items: center;
+            
+            gap: 40px;
+            font-size: 12px;
+            color: $clr-neutral-2;
+
+            &__plan{
+                display: flex;
+                flex-direction: column;
+                
+
+                h3{
+                    font-weight: 700;
+                    color: $clr-neutral-3;
+                }
+            }
 
         }
 
     }
 
-     
+     .summaryAction{
+        border-radius: 0 0 25px 25px;
+        padding: 0 20px 30px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+
+        .payment, .cancel{
+            height: 50px;
+            border: 0px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .payment{
+            color: $clr-white;
+            background-color: $clr-accent;
+            border-radius: 10px;
+            box-shadow: 0px 20px 40px -20px $clr-accent;
+            z-index: 3;
+
+            &:hover{
+                opacity: 50%;
+            }
+        }
+
+        .cancel{
+            color: $clr-neutral-2;
+            background-color: $clr-white;
+
+            &:hover{
+                color: $clr-neutral-3;
+            }
+        }
+     }
 
     
 
@@ -67,3 +126,16 @@ main{
 
 
 
+@media only screen and (min-width: 480px) {
+    body{
+        background: $clr-primary url(/images/pattern-background-desktop.svg);
+        background-size: 100%;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+
+    .orderSummary{
+        max-width: 450px;
+        padding: 20px;
+    }
+}
