@@ -3,7 +3,7 @@
 
 
 body{
-    background: $clr-primary url(images/pattern-background-mobile.svg);
+    background: $clr-primary url(./images/pattern-background-mobile.svg);
     background-position: top center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -128,7 +128,7 @@ main{
 
 @media only screen and (min-width: 480px) {
     body{
-        background: $clr-primary url(images/pattern-background-desktop.svg);
+        background: $clr-primary url(./images/pattern-background-desktop.svg);
         background-size: 100%;
         background-position: top;
         background-repeat: no-repeat;
