@@ -61,27 +61,45 @@ main{
             padding: 20px;
             border-radius: 20px;
             display: flex;
-            justify-items: flex-start;
-            align-items: center;
             
-            gap: 40px;
+            
+            
+            gap: 20px;
             font-size: 12px;
             color: $clr-neutral-2;
+
+            &_2{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            
+
 
             &__plan{
                 display: flex;
                 flex-direction: column;
-                
+                               
 
                 h3{
                     font-weight: 700;
                     color: $clr-neutral-3;
                 }
+
+               
+            }
+
+            .change{
+                color: $clr-accent;
+                font-weight: 700;
             }
 
         }
 
+        }
+
     }
+
+   
 
      .summaryAction{
         border-radius: 0 0 25px 25px;
