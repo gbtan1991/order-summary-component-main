@@ -12,78 +12,81 @@ body{
 }
 
 
-main{
-    display: grid;
-    place-content: center;
-    min-height: 100vh;
-    padding: 1.25rem;
+ main{
+     display: grid;
+     place-content: center;
+     min-height: 100vh;
+     padding: 1.25rem;
 
     
-    .banner img{
-        border-radius: 1.5625rem 1.5625rem 0 0;
-    }
+     .banner img{
+         border-radius: 1.5625rem 1.5625rem 0 0;
+     }
 
-    .summaryDescription, .summaryAction{
-        background-color: $clr-white;
+     .summaryDescription, .summaryAction{
+         background-color: $clr-white;
         
 
-    }
+     }
 
-    .summaryDescription{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px 30px 0 30px;
+     .summaryDescription{
+         display: flex;
+         flex-direction: column;
+         gap: 15px;
+         padding: 20px 30px 0 30px;
 
-        h1{
-            color: $clr-neutral-3;
-            font-weight: 900;
+         h1{
+             color: $clr-neutral-3;
+             font-weight: 900;
     
-        }
+         }
 
-        p{
-            color: $clr-neutral-2;
-            font-weight: 500;
-            padding: 0 20px;
-            font-size: 14px;
-        }
+         p{
+             color: $clr-neutral-2;
+             font-weight: 500;
+             padding: 0 20px;
+             font-size: 14px;
+         }
 
-    }
+     }
 
-    .summaryDetails{
-        background-color: $clr-white;
-        padding: 1.25rem;
+     .summaryDetails{
+         background-color: $clr-white;
+         padding: 1.25rem;
         
         
-        &__wrap{
-            font-weight: normal;
-            background-color: $clr-neutral-1;
-            padding: 20px;
-            border-radius: 20px;
-            display: flex;
-            
+         &__wrap{
+             font-weight: normal;
+             background-color: $clr-neutral-1;
+             padding: 20px;
+             border-radius: 20px;
+             display: flex;
+          
             
             
             gap: 20px;
             font-size: 12px;
             color: $clr-neutral-2;
 
-            &_2{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+             &_2{
+                 display: flex;
+                 justify-content: space-between;
+                 align-items: center;
+                 width: 15.625rem;
+                 gap: 50px;
+                
             
 
 
-            &__plan{
+             &__plan{
                 display: flex;
-                flex-direction: column;
+                 flex-direction: row;
                                
 
                 h3{
                     font-weight: 700;
                     color: $clr-neutral-3;
-                }
+                 }
 
                
             }
@@ -91,13 +94,17 @@ main{
             .change{
                 color: $clr-accent;
                 font-weight: 700;
-            }
 
-        }
+                &:hover{
+                    opacity: 50%;
+                }
+           }
 
-        }
+         }
 
-    }
+         }
+
+     }
 
    
 
@@ -156,4 +163,22 @@ main{
         max-width: 450px;
         padding: 20px;
     }
+
+    .summaryDetails__wrap{
+
+        
+    }
+
+    .summaryDetails__wrap_2{
+        width: 250px;
+        justify-content: space-between;
+        
+        
+        
+        
+
+    
+        
+    }
+
 }
