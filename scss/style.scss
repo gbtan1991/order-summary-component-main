@@ -16,11 +16,11 @@ body{
      display: grid;
      place-content: center;
      min-height: 100vh;
-     padding: 1.25rem;
+     padding: 20px;
 
     
      .banner img{
-         border-radius: 1.5625rem 1.5625rem 0 0;
+         border-radius: 25px 25px 0 0;
      }
 
      .summaryDescription, .summaryAction{
@@ -32,8 +32,8 @@ body{
      .summaryDescription{
          display: flex;
          flex-direction: column;
-         gap: 15px;
-         padding: 20px 30px 0 30px;
+         gap: 0.9375rem;
+         padding: 1.25rem 1.875rem 0 1.875rem;
 
          h1{
              color: $clr-neutral-3;
@@ -44,28 +44,28 @@ body{
          p{
              color: $clr-neutral-2;
              font-weight: 500;
-             padding: 0 20px;
-             font-size: 14px;
+             padding: 0 1.25rem;
+             font-size: 0.875rem;
          }
 
      }
 
      .summaryDetails{
          background-color: $clr-white;
-         padding: 1.25rem;
+         padding: 20px;
         
         
          &__wrap{
              font-weight: normal;
              background-color: $clr-neutral-1;
-             padding: 20px;
-             border-radius: 20px;
+             padding: 1.25rem;
+             border-radius: 1.25rem;
              display: flex;
           
             
             
-            gap: 20px;
-            font-size: 12px;
+            gap: 1.25rem;
+            font-size: 0.75rem;
             color: $clr-neutral-2;
 
              &_2{
@@ -109,16 +109,16 @@ body{
    
 
      .summaryAction{
-        border-radius: 0 0 25px 25px;
-        padding: 0 20px 30px 20px;
+        border-radius: 0 0 1.5625rem 1.5625rem;
+        padding: 0 1.25rem 1.875rem 1.25rem;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 0.625rem;
 
 
         .payment, .cancel{
-            height: 50px;
-            border: 0px;
+            height: 3.125rem;
+            border: 0rem;
             font-weight: 700;
             cursor: pointer;
         }
@@ -126,8 +126,8 @@ body{
         .payment{
             color: $clr-white;
             background-color: $clr-accent;
-            border-radius: 10px;
-            box-shadow: 0px 20px 40px -20px $clr-accent;
+            border-radius: 0.625rem;
+            box-shadow: 0rem 1.25rem 2.5rem -1.25rem $clr-accent;
             z-index: 3;
 
             &:hover{
@@ -151,7 +151,7 @@ body{
 
 
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 30rem) {
     body{
         background: $clr-primary url('../images/pattern-background-desktop.svg');
         background-size: 100%;
@@ -160,8 +160,8 @@ body{
     }
 
     .orderSummary{
-        max-width: 450px;
-        padding: 20px;
+        max-width: 28.125rem;
+        padding: 1.25rem;
     }
 
     .summaryDetails__wrap{
@@ -170,7 +170,7 @@ body{
     }
 
     .summaryDetails__wrap_2{
-        width: 250px;
+        width: 15.625rem;
         justify-content: space-between;
         
         
